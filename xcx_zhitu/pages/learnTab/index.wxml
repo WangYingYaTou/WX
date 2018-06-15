@@ -1,0 +1,12 @@
+<!--pages/learnTab/index.wxml-->
+<view class="clearfix">
+  <view class="bar-item {{item.d ? 'selected' : ''}}" wx:for="{{info.data.typs_conditions}}" wx:key="" data-index="{{index+1}}" bindtap='changeRooms'>{{item.name}}</view>
+</view>
+<view>
+  <view class="item" wx:for="{{roomList.data.house_lists}}" wx:key="">
+    <view>{{item.title}}   <text wx:for="{{item.tabs}}" wx:key="">{{item}}</text></view>
+    <view>
+      <image src="{{item.image}}"></image>
+    </view>
+  </view>
+</view>

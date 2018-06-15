@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{mainInfo.data.house_info.images}}" wx:key="">
+    <image src="{{item.image_path}}"></image>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/tab/index.wxml-->
+<view wx:for="{{allInfo.extend.dayTimeAllow}}" wx:key="" class="{{item.selected ? 'selected' : ''}}" bindtap="clickDay" data-index="{{index}}">{{item.day}}</view>
+<view>
+    <view bindtap="clickTime" data-allow="{{item.allow}}" wx:for="{{timeList}}" class="{{item.allow==1 ? 'selected' : ''}}" wx:key="" data-index="{{index}}">{{item.time}}</view>
+</view>

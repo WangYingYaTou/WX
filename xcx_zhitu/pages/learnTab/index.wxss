@@ -1,0 +1,17 @@
+/* pages/learnTab/index.wxss */
+.selected {
+    background: red;
+}
+.hide {
+    display: none;
+}
+.bar-item {
+  float: left;
+  margin: 20rpx;
+}
+.clearfix::after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
